@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19049" started-at="2021-01-24T22:52:29 CST" finished-at="2021-01-24T22:52:49 CST">
+  <suite name="Default suite" duration-ms="14944" started-at="2021-01-25T21:20:17 CST" finished-at="2021-01-25T21:20:32 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19049" started-at="2021-01-24T22:52:29 CST" finished-at="2021-01-24T22:52:49 CST">
+    <test name="Default test" duration-ms="14944" started-at="2021-01-25T21:20:17 CST" finished-at="2021-01-25T21:20:32 CST">
       <class name="test.AddCustomerTest">
-        <test-method status="PASS" signature="addUserAndCreateProfile()[pri:0, instance:test.AddCustomerTest@292b08d6]" name="addUserAndCreateProfile" duration-ms="19002" started-at="2021-01-24T22:52:30 CST" finished-at="2021-01-24T22:52:49 CST">
+        <test-method status="PASS" signature="addUserAndCreateProfile()[pri:0, instance:test.AddCustomerTest@292b08d6]" name="addUserAndCreateProfile" duration-ms="14903" started-at="2021-01-25T21:20:18 CST" finished-at="2021-01-25T21:20:32 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserAndCreateProfile -->

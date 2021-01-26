@@ -9,10 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-
 	
-	
-public void waitForElement(WebDriver driver, int timeInSec, WebElement elementLocator) {
+public static void waitForElement(WebDriver driver, int timeInSec, WebElement elementLocator) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, timeInSec);
 		wait.until(ExpectedConditions.visibilityOf(elementLocator));

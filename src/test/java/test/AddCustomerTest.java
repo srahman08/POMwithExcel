@@ -58,7 +58,7 @@ public class AddCustomerTest {
 		addCustomerPage.selectGroupName("AUG 2020");
 		addCustomerPage.clickToSave();
 		
-		addCustomerPage.clickOnListCustomerButton();
+	//	addCustomerPage.clickOnListCustomerButton();
 		
 		
 	}

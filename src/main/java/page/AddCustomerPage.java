@@ -92,9 +92,18 @@ public void selectGroupName(String groupName) {
 		wait.until(ExpectedConditions.visibilityOf(SELECT_SAVE_BUTTON));
 		SELECT_SAVE_BUTTON.click();
 	}
-	
+
 	public void clickOnListCustomerButton() {
 		waitForElement(driver, 10, AUTO_LOGIN_BUTTON_LOCATOR);
 		LIST_CUSTOMER_FIELD_LOCATOR.click();
 	}
+	
+	public void clickOnList() {
+		waitForElement(driver, 3, LIST_CUSTOMER_FIELD_LOCATOR);
+
+		LIST_CUSTOMER_FIELD_LOCATOR.click();
+		
+	}
+	
+	
 }
