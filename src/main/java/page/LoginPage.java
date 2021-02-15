@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 	
 	WebDriver driver;
 	public LoginPage(WebDriver driver) {
@@ -16,7 +18,7 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//input[@id='password']") WebElement PASSWORD_FIELD;
 	@FindBy(how = How.XPATH, using = "//button[@type='submit']") WebElement SIGNIN_FIELD;
 	
-	public void insertUserName(String userName) {
+		public void insertUserName(String userName) {
 		
 		USERNAME_FIELD.sendKeys(userName);
 	}
@@ -28,5 +30,19 @@ public class LoginPage {
 	public void clickOnSignInButton() {
 		SIGNIN_FIELD.click();
 		
+	}
+	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[2]/div/h2") WebElement Dashboard_Header_Element;
+
+//	public void validateDashboardHeader() {
+//		waitForElement(driver, 3, Dashboard_Header_Element);
+//		Assert.assertEquals(Dashboard_Header_Element.getText(), "Dashboard", "DashboardHeader not found!!" );
+//	}
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Customers')]") WebElement CUSTOMER_TAB;
+
+	public void tearDown() {
+		waitForElement(driver, 3, Dashboard_Header_Element);
+
+		driver.close();
+		driver.quit();
 	}
 }

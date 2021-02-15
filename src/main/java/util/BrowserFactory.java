@@ -10,8 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-public class BrowserFactory {
+import page.BasePage;
+
+public class BrowserFactory extends BasePage{
 	
 	static WebDriver driver;
 	static String browser;
@@ -56,9 +61,7 @@ public class BrowserFactory {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		return driver;
-		
-		
-		
+						
 	}
 	
 	

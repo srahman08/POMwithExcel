@@ -22,7 +22,6 @@ public class DashBoardPage extends BasePage{
 		Assert.assertEquals(Dashboard_Header_Element.getText(), "Dashboard", "DashboardHeader not found!!" );
 		
 	}	
-	AddCustomerPage addCustomerPage = PageFactory.initElements(driver, AddCustomerPage.class);
 	
 	
 

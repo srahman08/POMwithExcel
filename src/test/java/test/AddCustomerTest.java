@@ -57,9 +57,9 @@ public class AddCustomerTest {
 		addCustomerPage.enterCountryName(country);
 		addCustomerPage.selectGroupName("AUG 2020");
 		addCustomerPage.clickToSave();
-		
-	//	addCustomerPage.clickOnListCustomerButton();
-		
+		addCustomerPage.clickOnListCustomerButton();
+		addCustomerPage.verifyEnteredName();
+		//addCustomerPage.clickToDelete();
 		
 	}
 	

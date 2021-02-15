@@ -25,7 +25,9 @@ public class LoginTest {
 		loginPage.insertUserName(userName);
 		loginPage.insertPassword(password);
 		loginPage.clickOnSignInButton();
-	
+		
+		loginPage.tearDown();
+		
 	}
 	
 	
